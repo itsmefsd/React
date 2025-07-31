@@ -34,6 +34,9 @@ function App() {
 
   const path = "https://images.unsplash.com/photo-1753808645289-283497260e33?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   
+  const clik = function(e){
+      alert("Clicked !!!!")
+  }
 
   return (
     <div>
@@ -52,6 +55,9 @@ function App() {
       <h2>{userObj["email"]}</h2>
 
       <img height={200} width={200} src={path} alt="" />
+
+
+      <button onClick={clik} >Click me</button>
     </div>
   )
 }
